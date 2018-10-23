@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width", initial-scale="1")
+    meta(name="description" content="Extending your tools")
+    title Hi I'm a Browser Extension
+
+    link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" type="text/css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+
+    //- link(rel="icon" href="favicon.ico")
+    
+  body
+    .wrapper
+      != yield
+
+    | <script>
+    |   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    |   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    |   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    |   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    |   ga('create', 'XXX', 'auto');
+    |   ga('send', 'pageview');
+    | </script>

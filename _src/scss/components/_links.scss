@@ -1,0 +1,30 @@
+// Links
+//
+// .link--primary - for links using our primary color
+// .link--reset - for links using black and underline
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+.link--primary {
+  text-decoration: underline;
+
+  &:visited {
+    color: $brand-primary;
+  }
+
+  &:hover {
+    color: $brand-primary-mid;
+  }
+
+  &:active {
+    color: $brand-primary-dark;
+  }
+}
+
+.link--reset {
+  color: $black;
+  text-decoration: underline;
+}

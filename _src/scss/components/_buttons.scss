@@ -1,0 +1,117 @@
+// Button styles
+//
+// .btn - Base button styles
+// .btn--secondary - outline button styles
+// .btn--ghost - resembles link with no underline, inherits button size
+// .btn--icon-only - no text
+
+// remove input/button defaults
+button {
+  appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+button,
+.btn {
+  align-items: center;
+  background-color: $brand-primary;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: $white;
+  display: inline-flex;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $weight-semi-bold;
+  line-height: 1;
+  padding: 8px 16px 9px;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $brand-primary-mid;
+  }
+
+  &:active {
+    background-color: $brand-primary-dark;
+  }
+
+  &.btn--disabled {
+    background-color: $brand-primary;
+  }
+}
+
+.btn--secondary {
+  background-color: transparent;
+  border: 1px solid $brand-primary;
+  color: $brand-primary;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $brand-primary-mid;
+    color: $brand-primary-mid;
+  }
+
+  &:active {
+    background-color: transparent;
+    border: 1px solid $brand-primary-dark;
+    color: $brand-primary-dark;
+  }
+
+  &.btn--disabled {
+    background-color: transparent;
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+  }
+}
+
+.btn--ghost {
+  background-color: transparent;
+  color: $brand-primary;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $brand-primary-mid;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $brand-primary-dark;
+  }
+
+  &.btn--disabled {
+    background-color: transparent;
+    color: $brand-primary;
+  }
+}
+
+.btn--disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.btn--icon-only {
+  height: 33px;
+  justify-content: center;
+  padding-bottom: 10px;
+  position: relative;
+  width: 33px;
+
+  span {
+    font-size: $large-font-size;
+    position: absolute;
+  }
+}

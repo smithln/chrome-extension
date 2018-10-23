@@ -1,0 +1,27 @@
+html {
+  font-size: 87.5%; // Sets 1em to 14px
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $weight-normal;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $weight-heading;
+  line-height: $header-line-height;
+  margin-bottom: 20px;
+  text-rendering: optimizeLegibility; // improve kerning and ligatures in most browsers
+}
+
+p {
+  margin-bottom: 24px;
+}
