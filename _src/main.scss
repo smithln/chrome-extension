@@ -9,11 +9,15 @@
 @import 'scss/base/typography';
 
 // Components
-// @import 'scss/components/buttons';
-// @import 'scss/components/links';
+@import 'scss/components/buttons';
+@import 'scss/components/links';
 
 // TODO: remove me i am placeholder
 section {
   padding: 20px;
   max-width: 600px;
+
+  button {
+    margin: 0 1em;
+  }
 }
